@@ -9,9 +9,9 @@
           <p>Total: {{ formatCurrency(item.product.price * item.quantity) }}</p>
           <button @click="removeFromCart(item.product)">Remove</button>
         </div>
-        <h3>Total: {{ formatCurrency(totalPrice) }}</h3>
-        <button @click="checkout">Checkout</button>
       </div>
+      <h3>Total: {{ formatCurrency(totalPrice) }}</h3>
+        <button @click="checkout">Checkout</button>
     </div>
   </template>
   

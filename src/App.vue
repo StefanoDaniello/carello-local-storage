@@ -1,8 +1,11 @@
 <template>
   <div id="app">
     <h1>Shopping Cart</h1>
-    <ProductList :products="products" @add-to-cart="addToCart" />
-    <ShoppingCart :cart="cart" @remove-from-cart="removeFromCart" @checkout="checkout" />
+    <div class="container d-flex justify-content-between">
+      <ProductList :products="products" @add-to-cart="addToCart" />
+      <ShoppingCart :cart="cart" @remove-from-cart="removeFromCart" @checkout="checkout" />
+    </div>
+    
   </div>
 </template>
 
